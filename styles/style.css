@@ -1,0 +1,60 @@
+:root {
+    --background-colour: #422B2B;
+    --box-background-colour: #634141;
+    --box-shadow-colour: #825555;
+    --box-background-colour-hovered: #CDBF95;
+    --box-shadow-colour-hovered: #826759;
+
+    --font-colour: wheat;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background-colour);
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 60%;
+}
+
+#repos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap; 
+    width: 100%;
+}
+
+#title-section {
+
+}
+
+.detail-box {
+    background-color: var(--box-background-colour);
+    margin: 10% 0;
+    padding: 20%;
+    box-shadow: 1.2rem 1.2rem var(--box-shadow-colour);
+    width: 60%; /* accounts for 20% padding on each side*/
+
+    color: var(--font-colour);
+}
