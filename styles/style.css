@@ -6,6 +6,7 @@
     --box-shadow-colour-hovered: #826759;
 
     --font-colour: wheat;
+    --link-colour: rgb(208, 169, 96);
 }
 
 * {
@@ -45,16 +46,45 @@ main {
     width: 100%;
 }
 
-#title-section {
-
-}
-
 .detail-box {
     background-color: var(--box-background-colour);
     margin: 10% 0;
-    padding: 20%;
+    padding: 10%;
     box-shadow: 1.2rem 1.2rem var(--box-shadow-colour);
     width: 60%; /* accounts for 20% padding on each side*/
 
     color: var(--font-colour);
+}
+
+#keylinks-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.keylink {
+    margin: 10% 5% 5% 0;
+}
+
+.keylink a {
+    color: var(--link-colour);
+}
+
+.extra-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10% 0 0 0;
+}
+
+.extra-info-container > h2 {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.extra-info-container > img {
+    margin-left: auto;
+    margin-right: 0;
 }
