@@ -27,23 +27,24 @@
 
     transform: scale(1.1);
 
-    /* animation-name: enlarge;
-    animation-duration: 0.1s; */
-
 }
 
-.detail-box:hover .keylink a {
-    color: var(--box-shadow-colour);
+.detail-box:hover a {
+    color: var(--background-colourcolour);
 }
 
-/* Getting the boxes to fly into frame when you scroll into their visible window */
+.detail-box-inverted {
+    animation-name: fade-in;
+    animation-duration: 0.3s;
+}
+
+/* Setting up the actual animations */
 @keyframes fly-in {
     0%   {translate: -180% 0;}
     50%  {translate: 0% 0%;}
 }
 
-@keyframes enlarge {
-    0%      {transform: scale(1);}
-    100%    {transform: scale(1.1)}
+@keyframes fade-in {
+    0%      {opacity: 0;}
+    100%    {opacity: 1;}
 }
-

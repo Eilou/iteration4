@@ -26,7 +26,7 @@ main {
     width: 100%;
 }
 
-#content-wrapper {
+.content-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -46,12 +46,12 @@ main {
 
 .detail-box {
     background-color: var(--box-background-colour);
+    box-shadow: 1.2rem 1.2rem var(--box-shadow-colour);
+    color: var(--font-colour);
     margin: 10% 0;
     padding: 10%;
-    box-shadow: 1.2rem 1.2rem var(--box-shadow-colour);
     width: 60%; /* accounts for 20% padding on each side*/
-
-    color: var(--font-colour);
+ 
 }
 
 #title-section {
@@ -69,8 +69,16 @@ main {
     margin: 10% 5% 5% 0;
 }
 
-.keylink a {
+.keylink img {
+    border-radius: 0.2rem;
+}
+
+.detail-box a {
     color: var(--link-colour);
+}
+
+p {
+    margin: 5% auto;
 }
 
 .extra-info-container {
@@ -86,7 +94,54 @@ main {
     margin-right: auto;
 }
 
-.extra-info-container > img {
+.extra-info-container > .more-info-link {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.extra-info-container > .github-link {
     margin-left: auto;
     margin-right: 0;
+}
+
+.detail-box-inverted {
+
+    background-color: var(--font-colour);
+    box-shadow: 1.2rem 1.2rem var(--link-colour);
+    color: var(--box-background-colour);
+
+    margin: 10% 0;
+    padding: 10%;
+    width: 60%; /* accounts for 20% padding on each side*/
+}
+
+.detail-box-inverted a {
+    color: var(--background-colour);
+}
+
+.repo-examples-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    
+}
+
+.repo-example-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 80%
+}
+
+.repo-example-item-container img {
+    width: 100%;
+    max-height: auto;
+
+    border: solid var(--background-colour);
+    border-width: 0.5rem; 
 }
