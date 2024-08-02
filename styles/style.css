@@ -2,8 +2,6 @@
     --background-colour: #422B2B;
     --box-background-colour: #634141;
     --box-shadow-colour: #825555;
-    --box-background-colour-hovered: #CDBF95;
-    --box-shadow-colour-hovered: #826759;
 
     --font-colour: wheat;
     --link-colour: rgb(208, 169, 96);
@@ -54,6 +52,10 @@ main {
     width: 60%; /* accounts for 20% padding on each side*/
 
     color: var(--font-colour);
+}
+
+#title-section {
+    margin: 20% 0 10% 0;
 }
 
 #keylinks-container {

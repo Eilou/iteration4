@@ -1,0 +1,49 @@
+:root {
+    --background-colour: #422B2B;
+    --box-background-colour: #634141;
+    --box-shadow-colour: #825555;
+
+    --font-colour: wheat;
+    --link-colour: rgb(208, 169, 96);
+}
+
+/* Getting the boxes to change colour and size when you hover over them */
+
+#title-section {
+    animation-name: fly-in;
+    animation-duration: 4s;
+}
+
+.detail-box {
+    transition: background-color 0.2s ease 0s;
+    transition: transform 0.2s ease 0s;
+}
+
+
+.detail-box:hover {
+    background-color: var(--font-colour);
+    box-shadow: 1.2rem 1.2rem var(--link-colour);
+    color: var(--box-background-colour);
+
+    transform: scale(1.1);
+
+    /* animation-name: enlarge;
+    animation-duration: 0.1s; */
+
+}
+
+.detail-box:hover .keylink a {
+    color: var(--box-shadow-colour);
+}
+
+/* Getting the boxes to fly into frame when you scroll into their visible window */
+@keyframes fly-in {
+    0%   {translate: -180% 0;}
+    50%  {translate: 0% 0%;}
+}
+
+@keyframes enlarge {
+    0%      {transform: scale(1);}
+    100%    {transform: scale(1.1)}
+}
+
